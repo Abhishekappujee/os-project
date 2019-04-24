@@ -13,7 +13,11 @@ printf("\tEnter the burst time of %d process :",i+1);
 scanf(" %d",&bt[i]);
 printf("\tEnter the arrival time of %d process :",i+1);
 scanf(" %d",&at[i]);
-
+if(at[i]==0){
+printf("Error !!!\n Kindly Provide Valid Arrival Time.\n");
+printf("\tEnter the arrival time of %d process :",i+1);
+scanf(" %d",&at[i]);
+}
 } 
 for(i=0;i<n;i++)
 {
